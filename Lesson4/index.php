@@ -12,8 +12,6 @@
 
 <div class="mainContainer">
 
-
-
 	<?php
 
 	define(DIR_LOGS, 'logs/');
@@ -41,14 +39,16 @@
 		$logs = __DIR__ . '/' . DIR_LOGS;
 
 		$currLog = "log1.txt";
-		$logList = array_slice(scandir($logs), 2);
-
+		$logList = array_slice(scandir($logs), 2);		//get files in log folder
+									//TODO: Check filenames with regex
 		if (count($logList) > 0) {
+			// Getting last file by number
+			// TODO: Check in cycle instead to avoid gaps in numeration (or mb it's better this way?)
 			usort($logList, "cmpWrapper");
-			//var_dump($logList);
 			$currLog = $logList[count($logList) - 1];
 		}
 
+		// Count lines in current file
 		$linecount = 0;
 		$handle = fopen($logs . '/' . $currLog, "a+");
 		while(!feof($handle)){
@@ -56,6 +56,7 @@
 			$linecount++;
 		}
 
+		// Replace current file with a new one, if line count is above threshold
 		if ($linecount > 10) {
 			fclose($handle);
 			$currLog = 'log' . ((int)substr($currLog, 3) + 1) . '.txt';
@@ -76,8 +77,6 @@
 		return ($a < $b) ? -1 : 1;
 	}
 	?>
-
-
 
 </div>
 
