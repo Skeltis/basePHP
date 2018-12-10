@@ -1,0 +1,36 @@
+h2
+{
+	text-align: center;
+}
+
+.mainContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.imageItem
+{
+	display: flex;
+	align-items: center;
+	max-height: 300px;
+	max-width: 300px;
+	margin: 5px;
+}
+
+.imageItem img
+{
+	box-sizing: border-box;
+	width: 300px;
+	border: 1px solid darkslategray;
+}
+
+.singlImgCont
+{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
