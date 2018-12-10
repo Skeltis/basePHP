@@ -6,8 +6,9 @@
 		$logs = __DIR__ . '/' . DIR_LOGS;
 
 		$currLog = "log1.txt";
-		$logList = array_slice(scandir($logs), 2);
-
+		$initList = array_slice(scandir($logs), 2);
+		$logList = preg_grep("/log\d+\.txt/", $initList);
+		
 		if (count($logList) > 0) {
 			usort($logList, "cmpWrapper");
 			$currLog = $logList[count($logList) - 1];
