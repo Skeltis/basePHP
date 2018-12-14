@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h2> Цап Фырюшу за бочушу! =Р </h2>
+<h2> Галлерея </h2>
 
 <div class="mainContainer">
 
