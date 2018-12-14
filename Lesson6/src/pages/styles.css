@@ -1,0 +1,124 @@
+h2
+{
+	text-align: center;
+}
+
+.mainContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.imageItem
+{
+	display: flex;
+	align-items: center;
+	max-height: 300px;
+	max-width: 300px;
+	margin: 5px;
+}
+
+.imageItem img
+{
+	box-sizing: border-box;
+	width: 300px;
+	border: 1px solid darkslategray;
+}
+
+.singlImgCont
+{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+
+.centerBlock
+{
+	margin: 0 auto;
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.centerBlock form
+{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+
+.centerBlock textarea
+{
+	height: 300px;
+	margin: 10px;
+}
+
+.commentsLayout
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.review
+{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid gray;
+	margin: 5px;
+	padding: 5px;
+}
+
+.review strong
+{
+	margin-left: 15px;
+}
+
+.review strong:after
+{
+	content: ':';
+}
+
+.review a
+{
+	text-decoration: none;
+	display: block;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	background: #fff;
+	margin: 3px;
+	padding: 0px 3px;
+}
+
+.review a:hover
+{
+	background: black;
+	color: orangered;
+	border-color: orangered;
+}
+
+.buttonLayer
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.unapproved
+{
+	border: 1px dashed orangered;
+}
+
+.unapproved p
+{
+	text-decoration: underline;
+}
+
+.approved .approveBtn
+{
+	display: none;
+}
