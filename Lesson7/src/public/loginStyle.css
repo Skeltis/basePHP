@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+  padding: 0;
+  margin: 0;
+  outline-width: 0;
+  font-family: "Roboto"; }
+
+body {
+  background: #eee; }
+
+#container {
+  background: #fff;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 50px auto;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); }
+
+.tabs {
+  display: flex; }
+  .tabs .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #2196f3;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer; }
+    .tabs .tab.current {
+      background: #fff;
+      color: #000; }
+
+.form-div {
+  margin-bottom: 15px; }
+  .form-div:last-child {
+    margin-bottom: 0; }
+
+.input-area {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .input-area .fa {
+    display: flex; }
+
+.input {
+  background: #eee;
+  border: none;
+  font-size: 14px;
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease; }
+  .input:focus {
+    border-color: #2196f3;
+    padding-left: 52px; }
+    .input:focus ~ .input-icon {
+      left: 0; }
+  .input.not-empty {
+    padding-left: 52px; }
+    .input.not-empty ~ .input-icon {
+      left: 0; }
+
+.input-icon {
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 42px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2196f3;
+  color: #fff;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease; }
+
+.form-footer {
+  display: flex; }
+  .form-footer button {
+    background: #2196f3;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 400;
+    flex: 1;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease; }
+    .form-footer button span:nth-child(2) {
+      padding-left: 5px; }
+    .form-footer button:nth-child(1) {
+      margin-right: 10px; }
+    .form-footer button:nth-child(2) {
+      margin-left: 10px; }
+    .form-footer button:hover {
+      background: #1e88e5; }
+
+.register .form-footer button:first-child {
+  margin-right: 0; }
+
+.tab-content {
+  display: none;
+  background: #fff;
+  padding: 15px; }
+
+.tab-content.current {
+  display: inherit; }
+
+/*# sourceMappingURL=loginStyle.css.map */
